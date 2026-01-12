@@ -1,0 +1,18 @@
+Prompt pour Miro AI (Génération de Sitemap / Arborescence) :
+
+"Crée une carte mentale (mind map) structurée pour l'arborescence d'un site web universitaire (Département Informatique EFREI).
+
+Structure demandée :
+- Niveau 0 (Racine) : Page d'Accueil (Accueil / Index)
+- Niveau 1 (Catégories Principales) :
+  1. Cours et Formations
+  2. Équipe Enseignante
+  3. Projets Étudiants
+  4. Contact & À Propos
+- Niveau 2 (Sous-pages / Détails) :
+  - Sous 'Cours et Formations' : Programme, Modalités d'évaluation, Emploi du temps
+  - Sous 'Équipe Enseignante' : Responsables pédagogiques, Intervenants, Tuteurs
+  - Sous 'Projets Étudiants' : Galerie des projets, Hackathons, Témoignages
+  - Sous 'Contact & À Propos' : Formulaire de contact, Plan d'accès, Mentions légales, L'équipe de développement du site
+
+Format visuel : Arborescence hiérarchique claire, style professionnel et épuré."

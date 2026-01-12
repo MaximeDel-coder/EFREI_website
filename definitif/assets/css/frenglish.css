@@ -1,0 +1,136 @@
+@keyframes rainbow {
+    0% {
+        background-color: #ff0000;
+    }
+
+    20% {
+        background-color: #ffff00;
+    }
+
+    40% {
+        background-color: #00ff00;
+    }
+
+    60% {
+        background-color: #00ffff;
+    }
+
+    80% {
+        background-color: #0000ff;
+    }
+
+    100% {
+        background-color: #ff00ff;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes wobble {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    25% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    50% {
+        transform: translateX(5px) rotate(5deg);
+    }
+
+    75% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
+body {
+    font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif !important;
+    animation: rainbow 10s infinite alternate;
+    color: #0000ff;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👽</text></svg>") 16 0, auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffff00 !important;
+    text-shadow: 2px 2px #ff0000;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+a {
+    color: #ff00ff !important;
+    text-decoration: underline wavy #00ff00 !important;
+    font-weight: bold;
+}
+
+a:hover {
+    animation: spin 1s infinite linear;
+    display: inline-block;
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.btn,
+button {
+    background: linear-gradient(45deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff) !important;
+    border: 5px ridge gold !important;
+    box-shadow: 5px 5px 0px #000 !important;
+    color: black !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: wobble 2s infinite;
+}
+
+img {
+    border: 5px dashed #ff00ff;
+    padding: 10px;
+    background: white;
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1) rotate(10deg) skew(10deg);
+    filter: invert(100%);
+}
+
+.hero {
+    background-image: url('https://media.giphy.com/media/26BRQaiZM0IeyoJfa/giphy.gif') !important;
+    background-blend-mode: difference;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px solid red;
+    padding: 20px;
+}
+
+.logo img {
+    animation: spin 5s infinite linear;
+}
+
+.language-dropdown .dropdown-content a {
+    animation: none;
+}
+
+.language-dropdown .dropdown-content a:hover {
+    background-color: yellow !important;
+    color: red !important;
+}

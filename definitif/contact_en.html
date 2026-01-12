@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Admissions - EFREI</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="icon" type="image/png" href="assets/img/Logo_Efrei_2022.svg.png">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="accueil_en.html" class="logo">
+                <img src="assets/img/Logo_Efrei_2022.svg.png" alt="EFREI Logo">
+            </a>
+            <nav>
+                <div class="hamburger">
+                    <span>☰</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="accueil_en.html">Home</a></li>
+                    <li><a href="formations_en.html">Programs</a></li>
+                    <li><a href="vie-etudiante_en.html">Student Life</a></li>
+                    <li><a href="partenariats_en.html">International</a></li>
+                    <li><a href="equipe_en.html">About</a></li>
+                    <li><a href="contact_en.html" class="active">Contact</a></li>
+                </ul>
+                <div class="language-dropdown">
+                    <button class="dropbtn">🇬🇧 EN ▾</button>
+                    <div class="dropdown-content">
+                        <a href="contact.html">🇫🇷 Français</a>
+                        <a href="contact_en.html">🇬🇧 English</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero"
+            style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/campus-8334-1536x1017-1.jpg'); background-size: cover; background-position: center; color: white; padding: 120px 0; text-align: center;">
+            <div class="container">
+                <h1 style="font-size: 3rem; margin-bottom: 20px;">Contact & Admissions</h1>
+                <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+                    Have questions? Our team is here to support you in your orientation project.
+                </p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 50px;">
+                    <div>
+                        <h2 style="margin-bottom: 30px;">Find Us</h2>
+                        <div style="margin-bottom: 30px; line-height: 1.8; color: #555;">
+                            <p><strong>EFREI Campus</strong></p>
+                            <p>30-32 Avenue de la République, 94800 Villejuif</p>
+                            <p>Metro Line 7 - Villejuif Louis Aragon Station</p>
+                            <p><a href="tel:+33146774677" style="color: var(--primary-color);">+33 1 46 77 46 77</a>
+                            </p>
+                            <p><a href="mailto:admissions@efrei.fr"
+                                    style="color: var(--primary-color);">admissions@efrei.fr</a></p>
+                        </div>
+                        <div
+                            style="width: 100%; height: 300px; background-color: #eee; border-radius: 10px; overflow: hidden; position: relative;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.839805903264!2d2.3606363156724647!3d48.785022979280264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673e44535352d%3A0xe526d7ad45e7f6f1!2sEfrei!5e0!3m2!1sen!2sfr!4v1684332222222!5m2!1sen!2sfr"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <div id="contact-form-container">
+                        <h2 style="margin-bottom: 30px;">Send Us a Message</h2>
+                        <form id="contactForm" style="background: var(--light-bg); padding: 30px; border-radius: 10px;">
+                            <div class="form-group" style="margin-bottom: 20px;">
+                                <label for="name" style="display: block; margin-bottom: 8px; font-weight: 600;">Full
+                                    Name</label>
+                                <input type="text" id="name" name="name" required
+                                    style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 20px;">
+                                <label for="email"
+                                    style="display: block; margin-bottom: 8px; font-weight: 600;">Email</label>
+                                <input type="email" id="email" name="email" required
+                                    style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 20px;">
+                                <label for="subject"
+                                    style="display: block; margin-bottom: 8px; font-weight: 600;">Subject</label>
+                                <select id="subject" name="subject"
+                                    style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+                                    <option value="admissions">Admissions</option>
+                                    <option value="partenariats">Partnerships</option>
+                                    <option value="etudiants">Student Life</option>
+                                    <option value="autre">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 20px;">
+                                <label for="message"
+                                    style="display: block; margin-bottom: 8px; font-weight: 600;">Message</label>
+                                <textarea id="message" name="message" rows="5" required
+                                    style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+                            </div>
+                            <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" style="background-color: var(--light-bg);">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 40px;">Admission Procedures</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                    <div
+                        style="background: white; padding: 30px; border-radius: 10px; box-shadow: var(--card-shadow); border-top: 4px solid var(--primary-color);">
+                        <h3>Post-High School</h3>
+                        <p style="margin: 15px 0; color: #666;">Application via <strong>Parcoursup</strong>.</p>
+                        <p style="font-weight: bold;">Puissance Alpha Contest</p>
+                        <ul style="margin-top: 10px; padding-left: 20px; list-style-type: disc; color: #666;">
+                            <li>General Bac (Science Profile)</li>
+                            <li>STI2D Bac</li>
+                        </ul>
+                    </div>
+                    <div
+                        style="background: white; padding: 30px; border-radius: 10px; box-shadow: var(--card-shadow); border-top: 4px solid var(--secondary-color);">
+                        <h3>Transfer Admissions</h3>
+                        <p style="margin: 15px 0; color: #666;">Join EFREI after 1-4 years of higher education.</p>
+                        <p style="font-weight: bold;">Application + Interview</p>
+                        <ul style="margin-top: 10px; padding-left: 20px; list-style-type: disc; color: #666;">
+                            <li>CPGE (e3a-Polytech Contest)</li>
+                            <li>BTS, BUT, License (On application)</li>
+                        </ul>
+                    </div>
+                    <div
+                        style="background: white; padding: 30px; border-radius: 10px; box-shadow: var(--card-shadow); border-top: 4px solid var(--accent-color);">
+                        <h3>Delayed Entry</h3>
+                        <p style="margin: 15px 0; color: #666;">Don't lose a year. Join our Rebound program.</p>
+                        <p style="font-weight: bold;">March Intake</p>
+                        <ul style="margin-top: 10px; padding-left: 20px; list-style-type: disc; color: #666;">
+                            <li>Intensive program</li>
+                            <li>Catch-up semester</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container" style="max-width: 800px;">
+                <h2 style="text-align: center; margin-bottom: 40px;">Frequently Asked Questions</h2>
+                <div class="faq-accordion">
+                    <div class="faq-item" style="margin-bottom: 15px; border: 1px solid #eee; border-radius: 5px;">
+                        <button class="faq-question"
+                            style="width: 100%; text-align: left; padding: 20px; background: none; border: none; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            How to finance your studies?
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="faq-answer"
+                            style="padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="padding-bottom: 20px; color: #666;">EFREI offers many solutions: internal
+                                scholarships, bank partnerships with preferential rates, and work-study programs
+                                starting from the 3rd year (Master).</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" style="margin-bottom: 15px; border: 1px solid #eee; border-radius: 5px;">
+                        <button class="faq-question"
+                            style="width: 100%; text-align: left; padding: 20px; background: none; border: none; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            Where to live near campus?
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="faq-answer"
+                            style="padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="padding-bottom: 20px; color: #666;">Several partner student residences (ECLA,
+                                Studéa) are located in Villejuif, less than 10 minutes by foot or metro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EFREI</h3>
+                    <p>30-32 Avenue de la République<br>94800 Villejuif, France</p>
+                    <p><a href="tel:+33146774677" style="color: #aaa;">+33 1 46 77 46 77</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul style="line-height: 2;">
+                        <li><a href="formations_en.html">Programs</a></li>
+                        <li><a href="vie-etudiante_en.html">Student Life</a></li>
+                        <li><a href="partenariats_en.html">International</a></li>
+                        <li><a href="contact_en.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p style="color: #aaa; margin-bottom: 10px;">Find EFREI on social media:</p>
+                    <div class="social-links" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <a href="https://www.facebook.com/EfreiParis/" target="_blank">Facebook</a>
+                        <a href="https://twitter.com/Efrei_Paris" target="_blank">Twitter</a>
+                        <a href="https://www.linkedin.com/school/efrei/" target="_blank">LinkedIn</a>
+                        <a href="https://www.instagram.com/efrei_paris/" target="_blank">Instagram</a>
+                        <a href="https://www.youtube.com/user/EfreiParis" target="_blank">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EFREI. All Rights Reserved. | Legal Notice | Sitemap</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <style>
+        .faq-question.active .icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer.active {
+            max-height: 200px !important;
+        }
+    </style>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                button.classList.toggle('active');
+                if (button.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                } else {
+                    answer.style.maxHeight = 0;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

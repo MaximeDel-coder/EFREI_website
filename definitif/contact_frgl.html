@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="frgl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Call Me Maybe</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/frenglish.css">
+
+    <link rel="icon" type="image/png" href="assets/img/Logo_Efrei_2022.svg.png">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="accueil_frgl.html" class="logo">
+                <img src="assets/img/Logo_Efrei_2022.svg.png" alt="EFREI Logo">
+            </a>
+            <nav>
+                <div class="hamburger">
+                    <span>☰</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="accueil_frgl.html">Home / Accueil</a></li>
+                    <li><a href="formations_frgl.html">Programs / Formachions</a></li>
+                    <li><a href="vie-etudiante_frgl.html">Student Life / La Vie</a></li>
+                    <li><a href="partenariats_frgl.html">World / Monde</a></li>
+                    <li><a href="equipe_frgl.html">About / C ki ?</a></li>
+                    <li><a href="contact_frgl.html" class="active">Contact / Call Me</a></li>
+                </ul>
+                <div class="language-dropdown">
+                    <button class="dropbtn">🤪 FREX ▾</button>
+                    <div class="dropdown-content">
+                        <a href="contact.html">🇫🇷 Classique</a>
+                        <a href="contact_en.html">🇬🇧 Classic</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero"
+            style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/img/campus-8334-1536x1017-1.jpg'); background-size: cover; background-position: center; color: white; padding: 120px 0; text-align: center;">
+            <div class="container">
+                <h1 style="font-size: 3rem; margin-bottom: 20px;">Contact Us (We don't bite)</h1>
+                <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+                    Questions? Issues? Want to say hello? Do it here.
+                </p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div style="display: flex; gap: 50px; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <h2 style="margin-bottom: 20px;">Send a Message (Pigeon)</h2>
+                        <form id="contactForm" style="display: flex; flex-direction: column; gap: 20px;">
+                            <div>
+                                <label for="name" style="font-weight: bold; display: block; margin-bottom: 5px;">Your
+                                    Name (Nom)</label>
+                                <input type="text" id="name" name="name" required
+                                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                            </div>
+                            <div>
+                                <label for="email" style="font-weight: bold; display: block; margin-bottom: 5px;">Your
+                                    Email (@)</label>
+                                <input type="email" id="email" name="email" required
+                                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                            </div>
+                            <div>
+                                <label for="message" style="font-weight: bold; display: block; margin-bottom: 5px;">Your
+                                    Message (Bla bla)</label>
+                                <textarea id="message" name="message" rows="5" required
+                                    style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send it ! 🚀</button>
+                        </form>
+                    </div>
+
+                    <div style="flex: 1; min-width: 300px;">
+                        <h2 style="margin-bottom: 20px;">Find Us (GPS)</h2>
+                        <p style="margin-bottom: 20px;">
+                            <strong>Address:</strong><br>
+                            30-32 Avenue de la République<br>
+                            94800 Villejuif (The Place to Be)
+                        </p>
+                        <p style="margin-bottom: 20px;">
+                            <strong>Phone:</strong><br>
+                            01 46 77 46 77 (Bip Bip)
+                        </p>
+                        <div
+                            style="width: 100%; height: 300px; background-color: #eee; border-radius: 10px; overflow: hidden;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.567086829147!2d2.3614660768407483!3d48.7895781054924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673e445305141%3A0x6e9a6dc0a48a4369!2sEfrei!5e0!3m2!1sen!2sfr!4v1714488000000!5m2!1sen!2sfr"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 EFREI. Hotline Bling.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
